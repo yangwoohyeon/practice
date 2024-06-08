@@ -8,7 +8,11 @@ public class MyList {
         }
         System.out.println();
     }
-
+    public static void addNumbers(List<? super Integer> list){
+        for(int i=0; i<10; i++){
+            list.add(i);
+        }
+    }
     public static void main(String[] args) {
         List<Integer> li = Arrays.asList(1,2,3);
         printList(li);
